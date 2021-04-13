@@ -166,16 +166,18 @@ body{
 	height: 4rem;
 	outline: none;
 	border: none;
-
 	position: absolute;
-	left: 0;
+	left: 0px;
 
 	background-color: #d7bd73;
 	color: #ffffff;
 	font-family: "Poppins", sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
-	
+}
+.search-form span{
+	font-size: 1rem;
+	margin-left: 0.5rem;
 }
 
 .search-form select:hover{
@@ -186,7 +188,7 @@ body{
 .top-bar__input--search{
 	border: 0.2rem solid #909090;
 	border-radius: 4rem;
-	padding: 1rem 6.4rem 1rem 12.3rem;
+	padding: 1rem 6.4rem 1rem 12rem;
 	box-sizing: border-box;
 	outline: none;
 	
@@ -203,7 +205,6 @@ body{
 	box-sizing: border-box;
 	width: 4rem;
 	height: 4rem;
-	outline: none;
 	border: none;
 	border-radius: 50%;
 
@@ -226,5 +227,6 @@ body{
 	font-family: "Poppins";
 	font-size: 1rem;
 	font-weight: bold;
+	outline: none;
 }
 

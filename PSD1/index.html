@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>PSD__1</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<link rel="shortcut icon" href="images/icon/logo.png">
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 
 	<script src="https://kit.fontawesome.com/dd35a6f30f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 		<section class="top-bar">
+			<h2>Top</h2>
 			<div class="container">
 				<div class="row">
 					<div class="col">
@@ -81,9 +83,9 @@
 						</ul>
 					</div>
 					<div class="col">
-						<form action="">
+						<form action="#">
 							<div class="search-form">
-								<select name="option" id="">
+								<select name="option" id="opTion">
 									<option value="category" selected="">CATEGORY</option>
 									<option value="name">PRODUCT-1</option>
 									<option value="name">PRODUCT-2</option>
@@ -378,32 +380,48 @@
 			<div class="container-fuild">
 				<div class="row">
 					<div class="col">
-						<div class="desc__testimonials">
-							<h3>Client's Testimonials</h3>
-							<img src="images/icon/06.png" alt="">
-							<p>The orthers comfortable these days are all happy and free list now the world do not move to the best of just one drum what be right for you may be not story of a man</p>
-							<div class="client__infor">
-								<div class="show">
-									<img src="images/des1.png" alt="">
-									<h4>Lophie James</h4>
-									<p>Graphic Designer</p>
-									<ul>
-										<li><img src="images/des2.png" alt=""></li>
-										<li><img src="images/des3.png" alt=""></li>
-										<li><img src="images/des4.png" alt=""></li>
-									</ul>
-								</div>
-							</div>
-							<div class="desc__btn">
-                                <button class="btn btn-prev">
-                                    &#8592; Prev Review 
-                                </button>
-                                <button class="btn btn-next">    Next Review &#8594; 
-                                </button>
+                        <div class="desc__testimonials">
+                            <h3>Client's Testimonials</h3>
+                            <img src="images/icon/06.png" alt="">
+                            <p>The others comfortable these days are all happ and free list now the world do not
+                                move to the beat of just one drum what be right for you may not be story of a man
+                            </p>
+                            <div class="desc__carousel">
+                                <div class="desc__carousel--content">
+                                    <img src="images/des1.png" alt="" class="show">
+                                    <img src="images/des2.png" alt="" class="show">
+                                    <img src="images/des3.png" alt="" class="show">
+                                    <img src="images/des4.png" alt="" class="show">
+                                    <div class="user_info">
+                                        <h4>James</h4>
+                                        <p>Graphic Designer</p>
+                                    </div>
+                                    <div class="user_info">
+                                        <h4>Tuyen</h4>
+                                        <p>Graphic Designer</p>
+                                    </div>
+                                    <div class="user_info">
+                                        <h4>Hoang</h4>
+                                        <p>Graphic Designer</p>
+                                    </div>
+                                    <div class="user_info">
+                                        <h4>Hai</h4>
+                                        <p>Graphic Designer</p>
+                                    </div>
+                                </div>
+                                <ul class="desc__carousel--list">
+                                    <li><img src="images/des1.png" alt="" class="mySlides"></li>
+                                    <li><img src="images/des2.png" alt="" class="mySlides"></li>
+                                    <li><img src="images/des3.png" alt="" class="mySlides"></li>
+                                    <li><img src="images/des4.png" alt="" class="mySlides"></li>
+                                </ul>
                             </div>
-						</div>
-					</div>
-
+                            <div class="desc__btn">
+                                <button class="btn btn-prev" onclick="plusSlides(-1)"> &#8592; Prev Review </button>
+                                <button class="btn btn-next" onclick="plusSlides(1)"> Next Review &#8594; </button>
+                            </div>
+                        </div>
+                    </div>
 					<div class="col">
                         <div class="desc__featured--list">
                             <div class="desc__featured--content">
@@ -456,7 +474,7 @@
                             </li>
                             <li>
                             	<button class="btn-menu" onclick="filterSelection('art')">
-                            		<i class="fa fa-picture-o"aria-hidden="true"></i> 
+                            		<i class="fa fa-picture-o" aria-hidden="true"></i> 
                             		<span>Art</span>
                             	</button>
                             </li>
@@ -839,5 +857,6 @@
 		</div>
 	</footer>
 	<script src="js/filterSelection.js"></script>
+	<script src="js/slider.js"></script>
 </body>
 </html>
